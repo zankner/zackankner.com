@@ -18,25 +18,29 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <!-- <div class="container mt-5"> -->
+    <div class="container-fluid mt-5" style="width: 75%; max-width: none;">
         <div class="d-flex justify-content-center">
             <div class="col-md-6">
                 <h2>Zack Ankner</h2>
                 <p class="mt-4 mb-0">
                     I am a third year undergraduate student at MIT currently studying Computer Science and Mathematics.
-                    I currently work in the Programming Systems Group (PSG) led by <a
-                        href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>, and I am supervised by
+                    I am currently a member of <a href="https://people.csail.mit.edu/jrk/">Jonathan Ragan-Kelley's</a> lab where I work with William Brandon.
+                    I was previously a member of the Programming Systems Group (PSG) led by <a
+                        href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>, where I was supervised by
                     <a href="https://alexrenda.com/">Alex Renda</a>.
-                    At PSG I have led both a project on Transformers that are invariant to variable renamings and an
-                    empirical investigation of the effect data dimensionality has on neural network prunability.
-                    I also work as a research scientist intern at <a href="https://www.mosaicml.com/">MosaicML</a>,
-                    where I am investigating efficient methods for LLM pretraining and inference.
+                    I have also worked as a research scientist intern at <a href="https://www.mosaicml.com/">MosaicML</a> since the summer of 2022.
                 </p>
                 <p class="mt-3">
-                    In general I am interested in a variety of topics and happy to chat about anything ML related at all
-                    so reach out.
-                    I am currently focussing on the effect of pretraining data on models and also on systems speedups
-                    for ML.
+                    My research is aimed at improving LLM capabilities and usability through strong empirical investigation of simple modeling changes.
+                    I believe that there are many uncomplicated research ideas which yield consistent performance gains that are overlooked for more complex and intricate solutions that are often brittle and do not scale.
+                    In pretraining I have investigated LLM based data filtering techniques as well as scheduling masked autoencoder objectives for the purpose of improving trained model quality.
+                    For inference methods I have proposed adding sequential dependence to draft heads to improve speculative decoding performance. 
+
+                    My current research interest and projects involve improving LLM performance using dynamic inference compute as well as training improved preference models.
+
+                    While not my current research focus, I have worked on generative 3D modelling , neural surrogates of symbolic programs, and the science of ML in the past.
+
                 </p>
                 <p class="mt-3">
                     You can find my resume <a href="resume.pdf">here</a>.
@@ -63,13 +67,28 @@
                 <h2 class="mb-1">Papers <small style="font-size: small;">(* denotes equal contribution)</small></h2>
 
                 <div class="mt-4">
+                    <a href="https://arxiv.org/abs/2406.11196">Vid3D: Synthesis of Dynamic 3D Scenes using 2D Video Diffusion</a>
+                    <p class="mb-0">Rishab Parthasarathy*, <u>Zachary Ankner*</u>, and Aaron Gokaslan
+                    </p>
+                    <p class="mb-0">ICML 2024, CVG Workshop, Poster</p>
+                </div>
+
+                <div class="mt-4">
+                    <a href="https://arxiv.org/abs/2405.20541">Perplexed by Perplexity: Perplexity-Based Data Pruning With Small Reference Models</a>
+                    <p class="mb-0"><u>Zachary Ankner*</u>, Cody Blakeney, Kartik Sreenivasan, Max Marion, Matthew L. Leavitt, and Mansheej Paul
+                    </p>
+                    <p class="mb-0">Preprint</p>
+                </div>
+
+                <div class="mt-4">
                     <a href="https://arxiv.org/abs/2402.05109">Hydra: Sequentially-Dependent Draft Heads for Medusa
                         Decoding</a>
                     <p class="mb-0"><u>Zachary Ankner*</u>, Rishab Parthasarathy*, Aniruddha Nrusimha, Christopher
                         Rinard,
                         Jonathan Ragan-Kelly, and William Brandon
                     </p>
-                    <p class="mb-0">Preprint</p>
+                    <p class="mb-0">To appear at COLM 2024</p>
+                    <p><a href="https://github.com/zankner/Hydra">Code</a></p>
                 </div>
 
                 <div class="mt-4">
