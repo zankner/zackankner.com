@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- Fontawesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -13,143 +19,203 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <title>Zack Ankner</title>
+    <title style="font-size: larger;">Zack Ankner</title>
+
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+            -webkit-font-smoothing: antialiased;
+            /* background-color: #f7f4f0; */
+            background-color: #ffff;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        a {
+            color: #0066CC;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 6rem 1.5rem;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+
+        .bio-content {
+            flex: 1;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .contact-links {
+            margin-top: 0.5rem;
+        }
+
+        .contact-links a {
+            color: #0066CC;
+        }
+
+        .contact-links span {
+            color: #6b7280;
+            margin: 0 0.5rem;
+        }
+
+        .paper-item {
+            padding: 1rem 0;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .paper-icon {
+            width: 33.333%;
+            max-width: 250px;
+            max-height: 150px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+
+        .paper-content {
+            flex: 1;
+        }
+
+        .paper-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0066CC;
+            margin-bottom: 0.35rem;
+            display: block;
+            line-height: 1.4;
+        }
+
+        .paper-title:hover {
+            color: #0056b3;
+        }
+
+        .paper-authors {
+            font-size: 14px;
+            margin-bottom: 0.2rem;
+            color: #4b5563;
+        }
+
+        .paper-status {
+            font-size: 14px;
+            color: #111827;
+            font-style: italic;
+            margin-bottom: 0.35rem;
+        }
+
+        .paper-links {
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-links a {
+            font-size: 14px;
+            color: #0066CC;
+        }
+
+        .paper-links a:hover {
+            color: #0056b3;
+        }
+
+        .paper-abstract {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #4b5563;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 2rem;
+            }
+            
+            .main-container {
+                padding: 2rem 1rem;
+            }
+
+            .paper-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .paper-icon {
+                width: 100%;
+                max-width: 500px;
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <div class="container mt-5"> -->
-    <div class="container-fluid mt-5" style="width: 75%; max-width: none;">
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
+    <div class="main-container">
+        <div class="profile-section">
+            <div class="bio-content">
                 <h2>Zack Ankner</h2>
-                <p class="mt-4 mb-0">
-                    I am a third year undergraduate student at MIT currently studying Computer Science and Mathematics.
-                    I am currently a member of <a href="https://people.csail.mit.edu/jrk/">Jonathan Ragan-Kelley's</a> lab where I work with William Brandon.
-                    I was previously a member of the Programming Systems Group (PSG) led by <a
-                        href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>, where I was supervised by
+                <p>
+                    I am a fourth year undergraduate student at MIT currently studying Computer Science and Mathematics.
+                    Previously, I was a member of <a href="https://people.csail.mit.edu/jrk/">Jonathan Ragan-Kelley's</a> lab, where I worked with William Brandon.
+                    and a member of the Programming Systems Group (PSG) led by <a href="https://people.csail.mit.edu/mcarbin/">Michael Carbin</a>, where I was supervised by
                     <a href="https://alexrenda.com/">Alex Renda</a>.
-                    I have also worked as a research scientist intern at <a href="https://www.mosaicml.com/">MosaicML</a> since the summer of 2022.
+                    I was also an research scientist intern at <a href="https://www.mosaicml.com/">MosaicML</a>.
                 </p>
-                <p class="mt-3">
-                    My research is aimed at improving LLMs through strong empirical investigation of simple modeling changes.
-                    I believe that there are many uncomplicated research ideas which yield consistent performance gains that are overlooked for more complex and intricate solutions that are often brittle and do not scale.
-                    In pretraining I have investigated LLM based data filtering techniques as well as scheduling masked autoencoder objectives for the purpose of improving trained model quality.
-                    For inference methods I have proposed adding sequential dependence to draft heads to improve speculative decoding performance. 
-
-                    My current research interest and projects involve improving LLM performance using dynamic inference compute as well as training improved preference models.
-
-                    While not my current research focus, I have worked on generative 3D modelling , neural surrogates of symbolic programs, and the science of ML in the past.
-
+                <p>
+                    My current research focus is on aligning LLMs through rigorous empirical investigation of simple modeling changes.
+                    I believe that there are many uncomplicated research ideas that are overlooked for more complex and intricate solutions that are often brittle and do not scale.
+                    My general research philosophy is to start with the most obvious solution and iteratively add complexity only when necessary.
                 </p>
-                <p class="mt-3">
-                    You can find my resume <a href="resume.pdf">here</a>.
-                </p>
-            </div>
-            <div class="col-md-3 text-center d-flex flex-column justify-content-center">
-                <img class="img-fluid rounded w-75 mx-auto" src="profile.jpg" />
-                <div class="mt-4">
-                    <p class="mb-0"><a href="mailto:ankner@mit.edu" class="" target="_blank"><i
-                                class="fa-solid fa-envelope"></i>
-                            ankner@mit.edu</a></p>
-                    <p class="mb-0"><a href="https://twitter.com/ZackAnkner" class="" target="_blank"><i
-                                class="fa-brands fa-twitter"></i>
-                            @ZackAnkner</a></p>
-                    <p class="mb-0"><a href="https://scholar.google.com/citations?user=AaKpmFYAAAAJ&hl=en&oi=ao"
-                            class="" target="_blank"><i class="fa fa-graduation-cap"></i>
-                            Zachary Ankner</a></p>
+                <div class="contact-links">
+                    <a href="mailto:ankner@mit.edu">Email</a><span>/</span>
+                    <a href="https://twitter.com/ZackAnkner">Twitter</a><span>/</span>
+                    <a href="https://scholar.google.com/citations?user=AaKpmFYAAAAJ&hl=en&oi=ao">Google Scholar</a><span>/</span>
+                    <a href="resume.pdf">Resume</a>
                 </div>
             </div>
+            <img class="profile-img" src="profile.jpg" alt="Zack Ankner" />
         </div>
 
-        <div class="mt-5 d-flex justify-content-center">
-            <div class="col-md-9">
-                <h2 class="mb-1">Papers <small style="font-size: small;">(* denotes equal contribution)</small></h2>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2411.04330">Scaling Laws For Precision</a>
-                    <p class="mb-0">Tanishq Kumar*, <u>Zachary Ankner*</u>, Benjamin F. Spector, Blake Bordelon, Niklas Muennighoff, Mansheej Paul, Cengiz Pehlevan, Christopher Ré, Aditi Raghunathan</p>
-                    <p class="mb-0">Preprint</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2408.11791">Critique-out-Loud Reward Models</a>
-                    <p class="mb-0"><u>Zachary Ankner*</u>, Mansheej Paul*, Brandon Cui, Jonathan D. Chang, and Prithviraj Ammanabrolu
-                    </p>
-                    <p class="mb-0">Preprint</p>
-                    <p><a href="https://github.com/zankner/CLoud">Code</a></p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2406.11196">Vid3D: Synthesis of Dynamic 3D Scenes using 2D Video Diffusion</a>
-                    <p class="mb-0">Rishab Parthasarathy*, <u>Zachary Ankner*</u>, and Aaron Gokaslan
-                    </p>
-                    <p class="mb-0">ICML 2024, CVG Workshop, Poster</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2405.20541">Perplexed by Perplexity: Perplexity-Based Data Pruning With Small Reference Models</a>
-                    <p class="mb-0"><u>Zachary Ankner*</u>, Cody Blakeney, Kartik Sreenivasan, Max Marion, Matthew L. Leavitt, and Mansheej Paul
-                    </p>
-                    <p class="mb-0">Preprint</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2402.05109">Hydra: Sequentially-Dependent Draft Heads for Medusa
-                        Decoding</a>
-                    <p class="mb-0"><u>Zachary Ankner*</u>, Rishab Parthasarathy*, Aniruddha Nrusimha, Christopher
-                        Rinard,
-                        Jonathan Ragan-Kelly, and William Brandon
-                    </p>
-                    <p class="mb-0">To appear at COLM 2024</p>
-                    <p><a href="https://github.com/zankner/Hydra">Code</a></p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2311.09431">Striped Attention: Faster Ring Attention for Causal
-                        Transformers
-                    </a>
-                    <p class="mb-0">William Brandon, Aniruddha Nrusimha, Kevin Qian, <u>Zachary Ankner</u>, Tian Jin,
-                        Zhiye Song, and Jonathan Ragan-Kelly</p>
-                    <p class="mb-0">Preprint</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2305.15096">Dynamic Masking Rate Schedules for MLM Pretraining
-                    </a>
-                    <p class="mb-0"><u>Zachary Ankner</u>*, Naomi Saphra, Davis Blalock, Jonathan Frankle, Matthew L
-                        Leavitt</p>
-                    <p class="mb-0">EACL 2024, Poster</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2211.16677">3D Neural Field Generation using Triplane Diffusion
-                    </a>
-                    <p class="mb-0">J.Ryan Shue*, Eric Ryan Chan*, Ryan Po*, <u>Zachary Ankner</u>*, Jiajun Wu, and
-                        Gordon Wetzstein</p>
-                    <p class="mb-0">CVPR 2023, Poster</p>
-                    <p><a href="https://jryanshue.com/nfd/index.html">Project page</a>, <a
-                            href="https://github.com/JRyanShue/NFD">Code</a></p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://arxiv.org/abs/2212.00291">The Effect of Data Dimensionality on Neural Network
-                        Prunability
-                    </a>
-                    <p class="mb-0"><u>Zachary Ankner</u>*, Alex Renda, Gintare Karolina Dziugaite, Jonathan Frankle,
-                        and Tian Jin</p>
-                    <p class="mb-0">NeurIPS 2022, ICBINB Workshop</p>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://www.worldscientific.com/doi/10.1142/S0218001422590170">EntailSum: An
-                        Entailment-Based Approach to Aspect-Based Text Summarization with Automated Aspect Adaptation
-                    </a>
-                    <p class="mb-0"><u>Zachary Ankner</u>*, Purvaja Balaji, Ye Zhu, Chun Keat Hiew, Patrick Wang, and
-                        Amar Gupta</p>
-                    <p class="mb-5">International Journal of Pattern Recognition and Artificial Intelligence</p>
-                </div>
-            </div>
+        <div class="mt-5">
+            <h2>Papers <small style="font-size: 14px; color: #6b7280; font-weight: normal;">(* denotes equal contribution)</small></h2>
+            <div id="papers-container"></div>
         </div>
     </div>
 
@@ -164,6 +230,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript to load papers -->
+    <script>
+        fetch('papers.json')
+            .then(response => response.json())
+            .then(data => {
+                const papersContainer = document.getElementById('papers-container');
+                data.papers.forEach(paper => {
+                    const paperDiv = document.createElement('div');
+                    paperDiv.className = 'paper-item';
+                    
+                    let html = '';
+                    
+                    // Add paper icon if available
+                    if (paper.icon) {
+                        html += `<img class="paper-icon" src="paper-icons/${paper.icon}" alt="${paper.title}" />`;
+                    }
+                    
+                    html += `<div class="paper-content">
+                        <a href="${paper.link}" class="paper-title">${paper.title}</a>
+                        <div class="paper-authors">`;
+                    
+                    paper.authors.forEach((author, index) => {
+                        const isLast = index === paper.authors.length - 1;
+                        const isYou = author.includes('Zachary Ankner');
+                        html += `${isYou ? '<strong>' + author + '</strong>' : author}${!isLast ? ', ' : ''}`;
+                    });
+                    
+                    html += `</div>
+                        <div class="paper-status">${paper.status}</div>`;
+                    
+                    let links = [];
+                    if (paper.code) links.push(`<a href="${paper.code}">Code</a>`);
+                    if (paper.project_page) links.push(`<a href="${paper.project_page}">Project page</a>`);
+                    if (paper.twitter) links.push(`<a href="${paper.twitter}">Twitter thread</a>`);
+                    
+                    if (links.length > 0) {
+                        html += `<div class="paper-links">${links.join(' / ')}</div>`;
+                    }
+                    
+                    html += `<div class="paper-abstract">${paper.abstract}</div></div>`;
+                    
+                    paperDiv.innerHTML = html;
+                    papersContainer.appendChild(paperDiv);
+                });
+            })
+            .catch(error => console.error('Error loading papers:', error));
+    </script>
 </body>
 
 </html>

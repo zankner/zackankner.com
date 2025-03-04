@@ -1,0 +1,94 @@
+{
+  "papers": [
+    {
+      "title": "Scaling Laws For Precision",
+      "link": "https://arxiv.org/abs/2411.04330",
+      "authors": ["Tanishq Kumar*", "Zachary Ankner*", "Benjamin F. Spector", "Blake Bordelon", "Niklas Muennighoff", "Mansheej Paul", "Cengiz Pehlevan", "Christopher Ré", "Aditi Raghunathan"],
+      "status": "ICLR 2025; Oral",
+      "twitter": "https://x.com/tanishqkumar07/status/1856045600355352753",
+      "icon": "precision-scaling.png",
+      "abstract": "We investigate how model precision affects scaling laws in language models, finding that lower precision can lead to more efficient scaling while maintaining performance."
+    },
+    {
+      "title": "Critique-out-Loud Reward Models",
+      "link": "https://arxiv.org/abs/2408.11791",
+      "authors": ["Zachary Ankner*", "Mansheej Paul*", "Brandon Cui", "Jonathan D. Chang", "Prithviraj Ammanabrolu"],
+      "status": "arXiv 2024",
+      "code": "https://github.com/zankner/CLoud",
+      "twitter": "https://x.com/ZackAnkner/status/1826607200376336478",
+      "icon": "cloud.png",
+      "abstract": "We propose a novel approach to reward modeling that leverages explicit verbalization of critiques to improve model alignment."
+    },
+    {
+      "title": "Vid3D: Synthesis of Dynamic 3D Scenes using 2D Video Diffusion",
+      "link": "https://arxiv.org/abs/2406.11196",
+      "authors": ["Rishab Parthasarathy*", "Zachary Ankner*", "Aaron Gokaslan"],
+      "status": "CVG Workshop @ ICML 2024",
+      "icon": "vid-3d.png",
+      "abstract": "We present a method for generating dynamic 3D scenes by leveraging 2D video diffusion models, enabling high-quality 3D content creation."
+    },
+    {
+      "title": "Perplexed by Perplexity: Perplexity-Based Data Pruning With Small Reference Models",
+      "link": "https://arxiv.org/abs/2405.20541",
+      "authors": ["Zachary Ankner*", "Cody Blakeney", "Kartik Sreenivasan", "Max Marion", "Matthew L. Leavitt", "Mansheej Paul"],
+      "status": "ICLR 2025",
+      "twitter": "https://x.com/ZackAnkner/status/1797595682439901565",
+      "icon": "perplexity.png",
+      "abstract": "We explore using small reference models to guide data pruning decisions, showing that perplexity-based filtering can be effective even with limited computational resources."
+    },
+    {
+      "title": "Hydra: Sequentially-Dependent Draft Heads for Medusa Decoding",
+      "link": "https://arxiv.org/abs/2402.05109",
+      "authors": ["Zachary Ankner*", "Rishab Parthasarathy*", "Aniruddha Nrusimha", "Christopher Rinard", "Jonathan Ragan-Kelly", "William Brandon"],
+      "status": "COLM 2024",
+      "twitter": "https://x.com/ZackAnkner/status/1755764929838145695",
+      "code": "https://github.com/zankner/Hydra",
+      "icon": "hydra.png",
+      "abstract": "We introduce a novel approach to speculative decoding that leverages sequential dependencies between draft heads to improve generation speed."
+    },
+    {
+      "title": "Striped Attention: Faster Ring Attention for Causal Transformers",
+      "link": "https://arxiv.org/abs/2311.09431",
+      "authors": ["William Brandon", "Aniruddha Nrusimha", "Kevin Qian", "Zachary Ankner", "Tian Jin", "Zhiye Song", "Jonathan Ragan-Kelly"],
+      "status": "arXiv 2024",
+      "twitter": "https://x.com/exists_forall/status/1725608126475653563",
+      "icon": "stripe-attn.png",
+      "abstract": "We propose a more efficient variant of ring attention that reduces memory usage while maintaining model performance."
+    },
+    {
+      "title": "Dynamic Masking Rate Schedules for MLM Pretraining",
+      "link": "https://arxiv.org/abs/2305.15096",
+      "authors": ["Zachary Ankner*", "Naomi Saphra", "Davis Blalock", "Jonathan Frankle", "Matthew L Leavitt"],
+      "status": "EACL 2024",
+      "twitter": "https://x.com/ZackAnkner/status/1661352580746735620",
+      "icon": "mask-rate.png",
+      "abstract": "We investigate how varying masking rates during pretraining affects model performance, finding that dynamic schedules can improve learning efficiency."
+    },
+    {
+      "title": "3D Neural Field Generation using Triplane Diffusion",
+      "link": "https://arxiv.org/abs/2211.16677",
+      "authors": ["J.Ryan Shue*", "Eric Ryan Chan*", "Ryan Po*", "Zachary Ankner*", "Jiajun Wu", "Gordon Wetzstein"],
+      "status": "CVPR 2023",
+      "project_page": "https://jryanshue.com/nfd/index.html",
+      "code": "https://github.com/JRyanShue/NFD",
+      "icon": "triplane-diffusion.png",
+      "abstract": "We present a novel approach to 3D content generation using diffusion models operating on triplane representations."
+    },
+    {
+      "title": "The Effect of Data Dimensionality on Neural Network Prunability",
+      "link": "https://arxiv.org/abs/2212.00291",
+      "authors": ["Zachary Ankner*", "Alex Renda", "Gintare Karolina Dziugaite", "Jonathan Frankle", "Tian Jin"],
+      "status": "ICBINB @ NeurIPS 2022",
+      "icon": "data-dim-prunability.png",
+      "abstract": "We study how the dimensionality of training data affects the ability to prune neural networks while maintaining performance."
+    },
+    {
+      "title": "EntailSum: An Entailment-Based Approach to Aspect-Based Text Summarization with Automated Aspect Adaptation",
+      "link": "https://www.worldscientific.com/doi/10.1142/S0218001422590170",
+      "authors": ["Zachary Ankner*", "Purvaja Balaji", "Ye Zhu", "Chun Keat Hiew", "Patrick Wang", "Amar Gupta"],
+      "status": "IJPRAI 2022",
+      "icon": "entail-sum.png",
+      "abstract": "We propose a novel approach to aspect-based summarization that leverages entailment relationships to improve summary quality and adaptability."
+    }
+  ]
+} 
