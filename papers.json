@@ -1,6 +1,15 @@
 {
   "papers": [
     {
+      "title": "Learning to Keep a Promise: Scaling Language Model Decoding Parallelism with Learned Asynchronous Decoding",
+      "link": "https://arxiv.org/abs/2311.09431",
+      "authors": ["Tian Jin", "Ellie Y. Cheng", "Zack Ankner", "Nikunj Saunshi", "Blake M. Elias", "Amir Yazdanbakhsh", "Jonathan Ragan-Kelley", "Suvinay Subramanian", "Michael Carbin"],
+      "status": "arXiv 2025",
+      "icon": "pasta.png",
+      "twitter": "https://x.com/tjingrant/status/1896667757800042724",
+      "abstract": "We present PASTA, a learning-based system that teaches LLMs to identify semantic independence and express parallel decoding opportunities in their own responses, enabling faster decoding while maintaining response quality."
+    },
+    {
       "title": "Scaling Laws For Precision",
       "link": "https://arxiv.org/abs/2411.04330",
       "authors": ["Tanishq Kumar*", "Zachary Ankner*", "Benjamin F. Spector", "Blake Bordelon", "Niklas Muennighoff", "Mansheej Paul", "Cengiz Pehlevan", "Christopher Ré", "Aditi Raghunathan"],
